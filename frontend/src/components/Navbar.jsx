@@ -30,7 +30,7 @@ export function Navbar(){
         <Flyout_content href="/project" Flying_content={Null}>Project</Flyout_content>
         <Flyout_content href="/" Flying_content={Null}>Publication</Flyout_content>
         <Flyout_content href="/resources" Flying_content={Null}>Resources</Flyout_content>
-        <Flyout_content href="/" Flying_content={Null}>Beyond The Bench</Flyout_content>
+        <Flyout_content href="/gallery" Flying_content={Null}>Gallery</Flyout_content>
     </div>
 }
 function Null(){
