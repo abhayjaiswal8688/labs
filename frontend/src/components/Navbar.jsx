@@ -6,7 +6,7 @@ export function Flyout_content({children,href,Flying_content}){
     return<div
     onMouseEnter={()=>setDropdown(true)}
     onMouseLeave={()=>setDropdown(false)}
-     className="relative relative h-fit w-fit">
+     className="relative h-fit w-fit">
         <div className="relative text-xl hover:text-orange-600 cursor-pointer" onClick={()=>{href?Navigate(href):null}}>
         {children}
         <span
@@ -24,9 +24,9 @@ export function Flyout_content({children,href,Flying_content}){
 }
 export function Navbar(){
     const Navigate=useNavigate();
-    return<div className="flex flex justify-end-safe justify-evenly mt-4 mb-5">
+    return<div className="flex justify-evenly mt-4 mb-5">
        <Flyout_content href="/" Flying_content={Null} >Kumar Lab</Flyout_content>
-        <Flyout_content href="/" Flying_content={People_dropdown_menu}>People</Flyout_content>
+        <Flyout_content href="/people" Flying_content={People_dropdown_menu}>People</Flyout_content>
         <Flyout_content href="/project" Flying_content={Null}>Project</Flyout_content>
         <Flyout_content href="/" Flying_content={Null}>Publication</Flyout_content>
         <Flyout_content href="/resources" Flying_content={Null}>Resources</Flyout_content>
