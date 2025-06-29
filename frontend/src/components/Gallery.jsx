@@ -62,12 +62,15 @@ function Carousel({ children: slides }) {
 
 export function Gallery() {
   return (
+    <div>
+    <div className="bg-[#000f3a] h-40 "><div className="pl-30 pt-14 text-semibold text-white text-4xl flex"><div className="underline decoration-yellow-500 underline-offset-23 decoration-1">Gal</div>lery</div></div>
     <div className="max-w-8xl">
       <Carousel>
         {img.map((s, i) => (
-          <img key={i} src={s} className="w-full h-200 object-cover" />
+          <img key={i} src={s} className="w-full h-150 object-cover" />
         ))}
       </Carousel>
+    </div>
     </div>
   );
 }
