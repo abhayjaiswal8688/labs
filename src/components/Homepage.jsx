@@ -34,18 +34,18 @@ function Slideshow({ img }) {
   
   return (
     <div className="col-span-12">
-      <div className="bg-[#000f3a] h-40 "><div className="pl-30 pt-14 text-semibold text-white text-4xl flex"><div className="underline decoration-yellow-500 underline-offset-23 decoration-1">KUM</div>AR LABS</div></div>
+      <div className="bg-[#000f3a] h-40 "><div className="pl-10 pt-14 text-semibold text-white text-2xl md:text-3xl flex md:pl-30"><div className="underline decoration-yellow-500 underline-offset-23 decoration-1">KUM</div>AR LABS</div></div>
       <img
         src={img[index]}
         alt={`Slide ${index + 1}`}
-        className={`h-125 w-350 justify-self-center transition duration-[10000ms] ease-out  ${fade ? "scale-x-104" : "scale-x-100"} bg-zinc-200`}
+        className={`h-80 w-150 md:h-130 md:w-350 justify-self-center transition duration-[10000ms] ease-out  ${fade ? "scale-x-106" : "scale-x-100"} bg-zinc-200`}
       />
       <div>
         <h1 className="text-4xl font-extrabold mt-15 text-center text-blue-900">Identifying molecular pathways that regulate T cell responses for the benefit of treating immune-mediated disease.
         </h1>
         <h2 className="text-xl ffont-weight-[200] mt-7 text-center text-blue-900">Research Interests of the Kuchroo Laboratory</h2>
-        <h3 className="text-lg mt-7 ml-30 mr-30">The major focus of research in the laboratory is the regulation of T cell responses in the context of autoimmune disease. Particular focus is given to elucidating the role of cytokines and transcription factors in the differentiation of CD4+ T helper subsets in disease, the role of co-stimulatory and co-inhibitory receptors and their ligands in the regulation of autoreactive T cell responses, and the role of the TIM family of molecules in regulating effector and regulatory T cells.</h3>
-        <h3 className="text-lg mt-7 ml-30 mr-30 mb-40">The laboratory has primarily examined the autoreactive T cell response in experimental models of autoimmunity including Experimental autoimmune encephalomyelitis (EAE), type 1 diabetes, and colitis. For the study of EAE, the lab has created several models that are widely used by investigators in the field. These include models that harbor T cell reactivity to the myelin antigens myelin proteolipid protein (PLP) and myelin oligodendrocyte glycoprotein (MOG).</h3>
+        <h3 className="text-lg mt-7 ml-5 md:ml-30 md:mr-30">The major focus of research in the laboratory is the regulation of T cell responses in the context of autoimmune disease. Particular focus is given to elucidating the role of cytokines and transcription factors in the differentiation of CD4+ T helper subsets in disease, the role of co-stimulatory and co-inhibitory receptors and their ligands in the regulation of autoreactive T cell responses, and the role of the TIM family of molecules in regulating effector and regulatory T cells.</h3>
+        <h3 className="text-lg mt-7 ml-5 md:ml-30 md:mr-30 mb-40">The laboratory has primarily examined the autoreactive T cell response in experimental models of autoimmunity including Experimental autoimmune encephalomyelitis (EAE), type 1 diabetes, and colitis. For the study of EAE, the lab has created several models that are widely used by investigators in the field. These include models that harbor T cell reactivity to the myelin antigens myelin proteolipid protein (PLP) and myelin oligodendrocyte glycoprotein (MOG).</h3>
         
 
       </div>
