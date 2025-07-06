@@ -134,14 +134,7 @@ export function People() {
     return (
         <div className="bg-white text-[#2e2e2e]">
             
-            <div className="bg-[#000f3a] h-40 ">
-                <div className="pl-30 pt-14 text-semibold text-white text-4xl flex">
-                    <div className="underline decoration-yellow-500 underline-offset-23 decoration-1">
-                        PEO
-                    </div>
-                    PLE
-                </div>
-            </div>
+             <div className="bg-[#000f3a] h-40 "><div className="pl-10 pt-14 text-semibold text-white text-2xl md:text-3xl flex md:pl-30"><div className="underline decoration-yellow-500 underline-offset-23 decoration-1">PEO</div>PLE</div></div>
 
             <section className="max-w-6xl mx-auto px-4 py-12">
                 <h2 className="text-3xl text-[#000f3a] font-semibold mb-6 border-b-2 border-[#cccccc] pb-2">PRINCIPAL INVESTIGATOR</h2>
