@@ -192,9 +192,50 @@ export function People() {
             </section>
 
             {/* Modal Overlay */}
-            {
-                showModal && (
-                    <div className="fixed inset-0 bg-black/10 z-50 flex items-center justify-center">
+            {showModal && (
+                <>
+                    {/* 🌐 Mobile Modal (<sm) */}
+                    <div className="sm:hidden fixed inset-0 bg-black/50 z-50 flex items-center">
+                        <div className="bg-[#2a2a2a]/95 text-white rounded-lg shadow-xl mx-[10vw] w-[80vw] py-4 max-h-full overflow-y-auto relative">
+                            <button
+                            onClick={closeModal}
+                            className="absolute top-4 right-4 text-white text-2xl hover:text-red-400"
+                            aria-label="Close modal"
+                            >
+                            &times;
+                            </button>
+    
+                            <div className="flex flex-col items-center gap-4">
+                            <button
+                                onClick={previousMember}
+                                className="w-10 h-10 bg-gray-100 text-black text-xl rounded-full hover:bg-gray-200"
+                            >
+                                &#8592;
+                            </button>
+    
+                            <img
+                                src={current.image}
+                                alt={current.name}
+                                className="w-60 h-70 object-cover rounded shadow-md"
+                            />
+    
+                            <button
+                                onClick={nextMember}
+                                className="w-10 h-10 bg-gray-100 text-black text-xl rounded-full hover:bg-gray-200"
+                            >
+                                &#8594;
+                            </button>
+    
+                            <div className="text-center mt-4">
+                                <h3 className="text-2xl font-semibold mb-2">{current.name}</h3>
+                                <p className="text-gray-200 text-sm">{current.description}</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    {/* 💻 Desktop Modal (sm+) */}
+                    <div className="hidden sm:flex items-center justify-center fixed inset-0 bg-black/10 z-50">
                         <div className="bg-[#2a2a2a]/95 p-4 md:p-6 rounded-xl max-w-3xl w-[90%] h-[95vh] overflow-y-auto shadow-xl text-center text-white relative">
                             <button onClick={closeModal} className="absolute top-4 right-6 text-white hover:text-red-400 text-3xl font-bold">&times;</button>
                             <div className="flex justify-center mb-2">
@@ -203,12 +244,11 @@ export function People() {
                                 <button onClick={nextMember} className="w-[20%] h-[8vh] my-auto text-3xl text-black bg-gray-100 rounded hover:bg-gray-200">&#8594;</button>
                             </div>
                             <h3 className="text-3xl font-bold mb-2">{current.name}</h3>
-                            <p className="text-gray-200 max-w-3xl text-lg mx-auto">{current.description}</p>
-                            
+                            <p className="text-gray-200 max-w-3xl text-lg mx-auto">{current.description}</p>   
                         </div>
-                    </div> )
-            }
-
+                    </div>
+                </>
+            )}
         </div>
     )
 }
