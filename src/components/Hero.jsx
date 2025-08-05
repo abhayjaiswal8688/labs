@@ -1,4 +1,4 @@
-import { Navbar } from "./navbar";
+import { Navbar } from "./Navbar";
 
 export function Hero(){
     return <div className="grid grid-cols-12 mt-5 mb-10">
