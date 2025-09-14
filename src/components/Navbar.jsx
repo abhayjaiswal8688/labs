@@ -45,7 +45,7 @@ export function Navbar() {
       {/* Desktop Navbar */}
       <div className="hidden md:flex justify-evenly mt-7 mb-5">
         <Flyout_content href="/" Flying_content={Null}>
-          Kumar Lab
+          Kumar's Lab
         </Flyout_content>
         <Flyout_content href="/people" Flying_content={Null}>
           People

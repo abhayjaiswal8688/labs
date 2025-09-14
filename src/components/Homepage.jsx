@@ -56,7 +56,7 @@ function Slideshow({ img }) {
         }
       `}</style>
 
-      <div className="bg-[#000f3a] h-40 "><div className="pl-10 pt-14 text-semibold text-white text-2xl md:text-3xl flex md:pl-30"><div className="underline decoration-yellow-500 underline-offset-23 decoration-1">KUM</div>AR LABS</div></div>
+      <div className="bg-[#000f3a] h-40 "><div className="pl-10 pt-14 text-semibold text-white text-2xl md:text-3xl flex md:pl-30"><div className="underline decoration-yellow-500 underline-offset-23 decoration-1">KUM</div>AR'S LABS</div></div>
       <img
         src={img[index]}
         alt={`Slide ${index + 1}`}
@@ -116,14 +116,19 @@ function Slideshow({ img }) {
 
 {/* achivements */}
 <div className="w-full overflow-hidden bg-gray-100">
-  {/* Title */}
-  <div className="flex items-center py-4">
-    <div className="w-12 h-px bg-green-600"></div>
-    <span className="flex-shrink text-3xl text-blue-900 px-4 text-left font-bold">
-      ACHIEVEMENTS
-    </span>
-    <div className="flex-grow h-px bg-green-600"></div>
-  </div>
+    {/* Title */}
+    <div className="flex items-center py-4">
+  {/* Left Line */}
+  <div className="w-20 h-1 bg-gradient-to-l from-red-600 to-white"></div>
+
+  {/* Text */}
+  <span className="flex-shrink text-2xl sm:text-3xl text-blue-900 px-4 text-left font-bold">
+    ACHIEVEMENTS
+  </span>
+
+  {/* Right Line */}
+  <div className="flex-grow h-1 bg-gradient-to-r from-red-600 to-gray-100"></div>
+</div>
 
   {/* Images */}
   <div className="flex flex-col md:flex-row justify-evenly items-center">
@@ -143,12 +148,11 @@ function Slideshow({ img }) {
 </div>
 
 <div className="w-full overflow-hidden ">
-<div class="flex items-center py-4">
-<div className="flex items-center py-4 w-full">
-  {/* Left line */}
-  <div className="w-6 sm:w-12 h-px bg-green-600"></div>
+<div className="flex items-center py-4">
+  {/* Left Line */}
+  <div className="w-20 h-1 bg-gradient-to-l from-blue-600 to-white"></div>
 
-  {/* Title */}
+  {/* Text */}
   <span className="flex-shrink-0 text-lg sm:text-xl md:text-2xl lg:text-3xl text-blue-900 px-2 sm:px-4 font-bold">
     {/* Short text for small screens */}
     <span className="block md:hidden">COLLABORATIONS</span>
@@ -157,10 +161,8 @@ function Slideshow({ img }) {
     <span className="hidden md:block">INTERNATIONAL AND NATIONAL COLLABORATIONS</span>
   </span>
 
-  {/* Right line */}
-  <div className="flex-grow h-px bg-green-600"></div>
-</div>
-
+  {/* Right Line */}
+  <div className="flex-grow h-1 bg-gradient-to-r from-blue-600 to-gray-100"></div>
 </div>
   <ul className="logo-track flex items-center">
     <li><img src="/Homepage/1.png" /></li>
@@ -206,12 +208,18 @@ function Slideshow({ img }) {
 <div className="w-full overflow-hidden bg-gray-100">
   {/* Title */}
   <div className="flex items-center py-4">
-    <div className="w-12 h-px bg-green-600"></div>
-    <span className="flex-shrink text-2xl sm:text-3xl text-blue-900 px-4 text-left font-bold">
-      SPONSORS
-    </span>
-    <div className="flex-grow h-px bg-green-600"></div>
-  </div>
+  {/* Left Line */}
+  <div className="w-20 h-1 bg-gradient-to-l from-green-600 to-white"></div>
+
+  {/* Text */}
+  <span className="flex-shrink text-2xl sm:text-3xl text-blue-900 px-4 text-left font-bold">
+    SPONSORS
+  </span>
+
+  {/* Right Line */}
+  <div className="flex-grow h-1 bg-gradient-to-r from-green-600 to-gray-100"></div>
+</div>
+
 
   {/* Sponsor Logos */}
   <ul className="flex justify-center">
